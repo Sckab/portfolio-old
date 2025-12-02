@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sckab Portfolio</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <header>
+      <div class="bg-violet-700 flex justify-center items-center p-4 gap-5">
+        <a href="https://github.com/Sckab" class="select-none cursor-pointer">
+          <img
+            src="/favicon.svg"
+            alt="Sckab pfp"
+            class="size-24 rounded-full outline-2 outline-stone-300 outline-offset-2"
+          />
+        </a>
+
+        <h1 class="font-inter text-stone-300 font-bold text-5xl select-none">
+          SCKAB PORTFOLIO
+        </h1>
+      </div>
+
+      <nav class="bg-violet-600"></nav>
+    </header>
+
+    <main class="bg-stone-900 grow">
+      <slot />
+    </main>
+
+    <footer class="bg-violet-700"></footer>
+  </body>
+</html>
