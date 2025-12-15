@@ -1,7 +1,19 @@
 ---
 import Layout from "../layouts/main.astro";
+import Title from "../compontents/title.astro";
+import Paragraph from "../compontents/paragraph.astro";
 ---
 
 <Layout>
-  <p>foo</p>
+  <section class="flex flex-row mt-6 items-center justify-center">
+    <div class="flex flex-col w-1/2">
+      <Title>Hello!</Title>
+
+      <Paragraph>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+        tempora quibusdam ratione ad, neque sequi saepe totam quos, ab autem,
+        eius consectetur minima officia aut deserunt hic vitae quod qui.
+      </Paragraph>
+    </div>
+  </section>
 </Layout>

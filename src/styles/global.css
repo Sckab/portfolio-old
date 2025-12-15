@@ -3,4 +3,64 @@
 
 @theme {
   --font-inter: "Inter", sans-serif;
+
+  --color-floral-white-50: #fff9e5;
+  --color-floral-white-100: #fff3cc;
+  --color-floral-white-200: #ffe799;
+  --color-floral-white-300: #ffdb66;
+  --color-floral-white-400: #ffcf33;
+  --color-floral-white-500: #ffc300;
+  --color-floral-white-600: #cc9c00;
+  --color-floral-white-700: #997500;
+  --color-floral-white-800: #664e00;
+  --color-floral-white-900: #332700;
+  --color-floral-white-950: #241b00;
+
+  --color-dust-grey-50: #f4f3f0;
+  --color-dust-grey-100: #eae7e1;
+  --color-dust-grey-200: #d4cec4;
+  --color-dust-grey-300: #bfb6a6;
+  --color-dust-grey-400: #a99d89;
+  --color-dust-grey-500: #94856b;
+  --color-dust-grey-600: #766a56;
+  --color-dust-grey-700: #595040;
+  --color-dust-grey-800: #3b352b;
+  --color-dust-grey-900: #1e1b15;
+  --color-dust-grey-950: #15130f;
+
+  --color-charcoal-brown-50: #f3f2f1;
+  --color-charcoal-brown-100: #e7e6e4;
+  --color-charcoal-brown-200: #cfccc9;
+  --color-charcoal-brown-300: #b7b3ae;
+  --color-charcoal-brown-400: #9f9a93;
+  --color-charcoal-brown-500: #878178;
+  --color-charcoal-brown-600: #6c6760;
+  --color-charcoal-brown-700: #514d48;
+  --color-charcoal-brown-800: #363330;
+  --color-charcoal-brown-900: #1b1a18;
+  --color-charcoal-brown-950: #131211;
+
+  --color-carbon-black-50: #f3f2f2;
+  --color-carbon-black-100: #e7e6e4;
+  --color-carbon-black-200: #cecdca;
+  --color-carbon-black-300: #b6b4af;
+  --color-carbon-black-400: #9d9a95;
+  --color-carbon-black-500: #85817a;
+  --color-carbon-black-600: #6a6762;
+  --color-carbon-black-700: #504e49;
+  --color-carbon-black-800: #353431;
+  --color-carbon-black-900: #1b1a18;
+  --color-carbon-black-950: #131211;
+
+  --color-spicy-paprika-50: #fdeee8;
+  --color-spicy-paprika-100: #fbdcd0;
+  --color-spicy-paprika-200: #f6baa2;
+  --color-spicy-paprika-300: #f29773;
+  --color-spicy-paprika-400: #ee7444;
+  --color-spicy-paprika-500: #e95216;
+  --color-spicy-paprika-600: #bb4111;
+  --color-spicy-paprika-700: #8c310d;
+  --color-spicy-paprika-800: #5d2109;
+  --color-spicy-paprika-900: #2f1004;
+  --color-spicy-paprika-950: #210b03;
 }

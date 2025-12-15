@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+
+import DropElem from "../compontents/drop-element.astro";
+import Link from "../compontents/link.astro";
+---
+
+<header>
+  <div class="bg-spicy-paprika-500 flex justify-center items-center p-4 gap-5">
+    <a href="https://github.com/Sckab" class="select-none cursor-pointer">
+      <img
+        src="/favicon.svg"
+        alt="Sckab pfp"
+        class="size-24 rounded-full outline-3 outline-carbon-black-900 outline-offset-2"
+      />
+    </a>
+
+    <h1 class="font-inter text-carbon-black-900 font-bold text-5xl select-none">
+      SCKAB PORTFOLIO
+    </h1>
+  </div>
+
+  <nav class="bg-spicy-paprika-400 flex justify-center items-center h-fit">
+    <div
+      x-data="{ open: false }"
+      @click.outside="open = false"
+      class="relative"
+    >
+      <div
+        class="flex flex-row justify-center items-center gap-2 p-1 cursor-pointer select-none"
+        @click="open = !open"
+      >
+        <i class="fa-solid fa-envelope fa-xl text-carbon-black-900"></i>
+
+        <p class="text-xl text-carbon-black-900 font-bold">Contacts</p>
+      </div>
+
+      <div
+        x-show="open"
+        class="absolute top-full bg-spicy-paprika-400 p-3 rounded-br-lg rounded-bl-lg flex flex-row justify-between"
+      >
+        <div class="text-carbon-black-900 font-bold flex flex-row">
+          <div class="flex flex-col">
+            <DropElem>
+              <i class="fa-brands fa-github"></i>
+              <Link link="https://github.com/Sckab"> Github </Link>
+            </DropElem>
+            <DropElem>
+              <i class="fa-solid fa-code"></i>
+              <Link link="https://leetcode.com/u/Sckab">LeetCode</Link>
+            </DropElem>
+            <DropElem>
+              <i class="fa-brands fa-discord"></i>
+              <Link link="https://discord.gg/RVX6RRqkt5">Discord</Link>
+            </DropElem>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
