@@ -1,13 +1,16 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css'
 
-import DropElem from "../compontents/drop-element.astro";
-import Link from "../compontents/link.astro";
+import DropElem from '../compontents/drop-element.astro'
+import Link from '../compontents/link.astro'
 ---
 
 <header>
   <div class="bg-spicy-paprika-500 flex justify-center items-center p-4 gap-5">
-    <a href="https://github.com/Sckab" class="select-none cursor-pointer">
+    <a
+      href="https://github.com/Sckab"
+      class="select-none cursor-pointer"
+    >
       <img
         src="/favicon.svg"
         alt="Sckab pfp"
@@ -21,41 +24,59 @@ import Link from "../compontents/link.astro";
   </div>
 
   <nav class="bg-spicy-paprika-400 flex justify-center items-center h-fit">
-    <div
-      x-data="{ open: false }"
-      @click.outside="open = false"
-      class="relative"
-    >
-      <div
-        class="flex flex-row justify-center items-center gap-2 p-1 cursor-pointer select-none"
-        @click="open = !open"
-      >
-        <i class="fa-solid fa-envelope fa-xl text-carbon-black-900"></i>
+    <ul>
+      <li>
+        <div
+          x-data="{ open: false }"
+          @click.outside="open = false"
+          class="relative"
+        >
+          <button
+            class="flex flex-row justify-center items-center gap-2 p-1 cursor-pointer select-none"
+            @click="open = !open"
+          >
+            <i class="bi bi-envelope-fill text-carbon-black-900 text-2xl"></i>
 
-        <p class="text-xl text-carbon-black-900 font-bold">Contacts</p>
-      </div>
+            <span class="text-xl text-carbon-black-900 font-bold">
+              Contacts
+            </span>
+          </button>
 
-      <div
-        x-show="open"
-        class="absolute top-full bg-spicy-paprika-400 p-3 rounded-br-lg rounded-bl-lg flex flex-row justify-between"
-      >
-        <div class="text-carbon-black-900 font-bold flex flex-row">
-          <div class="flex flex-col">
-            <DropElem>
-              <i class="fa-brands fa-github"></i>
-              <Link link="https://github.com/Sckab"> Github </Link>
-            </DropElem>
-            <DropElem>
-              <i class="fa-solid fa-code"></i>
-              <Link link="https://leetcode.com/u/Sckab">LeetCode</Link>
-            </DropElem>
-            <DropElem>
-              <i class="fa-brands fa-discord"></i>
-              <Link link="https://discord.gg/RVX6RRqkt5">Discord</Link>
-            </DropElem>
+          <div
+            x-show="open"
+            class="absolute top-full bg-spicy-paprika-400 p-3 rounded-br-lg rounded-bl-lg flex flex-row justify-between"
+          >
+            <div class="text-carbon-black-900 font-bold flex flex-row">
+              <div class="flex flex-col">
+                <DropElem>
+                  <i class="bi bi-github"></i>
+
+                  <Link
+                    link="https://github.com/Sckab"
+                    text="Github"
+                  />
+                </DropElem>
+                <DropElem>
+                  <i class="bi bi-braces-asterisk"></i>
+
+                  <Link
+                    link="https://leetcode.com/u/Sckab"
+                    text="LeetCode"
+                  />
+                </DropElem>
+                <DropElem>
+                  <i class="bi bi-discord"></i>
+
+                  <Link
+                    link="https://discord.gg/RVX6RRqkt5"
+                    text="Discord"
+                  />
+                </DropElem>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </nav>
 </header>
