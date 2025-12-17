@@ -3,6 +3,8 @@ import '../styles/global.css'
 
 import DropElem from '../compontents/drop-element.astro'
 import Link from '../compontents/link.astro'
+
+import { Icon } from 'astro-icon/components'
 ---
 
 <header>
@@ -35,7 +37,10 @@ import Link from '../compontents/link.astro'
             class="flex flex-row justify-center items-center gap-2 p-1 cursor-pointer select-none"
             @click="open = !open"
           >
-            <i class="bi bi-envelope-fill text-carbon-black-900 text-2xl"></i>
+            <Icon
+              name="mdi:envelope"
+              class="text-carbon-black-900 text-3xl"
+            />
 
             <span class="text-xl text-carbon-black-900 font-bold">
               Contacts
@@ -49,7 +54,10 @@ import Link from '../compontents/link.astro'
             <div class="text-carbon-black-900 font-bold flex flex-row">
               <div class="flex flex-col">
                 <DropElem>
-                  <i class="bi bi-github"></i>
+                  <Icon
+                    name="mdi:github"
+                    class="text-xl"
+                  />
 
                   <Link
                     link="https://github.com/Sckab"
@@ -57,7 +65,10 @@ import Link from '../compontents/link.astro'
                   />
                 </DropElem>
                 <DropElem>
-                  <i class="bi bi-braces-asterisk"></i>
+                  <Icon
+                    name="simple-icons:leetcode"
+                    class="text-xl"
+                  />
 
                   <Link
                     link="https://leetcode.com/u/Sckab"
@@ -65,7 +76,10 @@ import Link from '../compontents/link.astro'
                   />
                 </DropElem>
                 <DropElem>
-                  <i class="bi bi-discord"></i>
+                  <Icon
+                    name="akar-icons:discord-fill"
+                    class="text-xl"
+                  />
 
                   <Link
                     link="https://discord.gg/RVX6RRqkt5"
