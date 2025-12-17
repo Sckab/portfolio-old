@@ -10,6 +10,7 @@ export default defineConfig({
     alpinejs(),
     icon({
       include: {
+        fluent: ["*"],
         simple_icons: ["*"],
         mdi: ["*"],
         akar_icons: ["discord-fill"]

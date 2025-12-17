@@ -1,0 +1,72 @@
+---
+import '../styles/global.css'
+
+import { Icon } from 'astro-icon/components'
+import DropElem from './drop-element.astro'
+import Link from './link.astro'
+import NavbarEntry from './navbar-entry.astro'
+---
+
+<div
+  x-data="{ open: false }"
+  @click.outside="open = false"
+  class="relative w-fit"
+>
+  <button
+    class="flex flex-row justify-center items-center gap-2 p-1 cursor-pointer select-none"
+    @click="open = !open"
+  >
+    <Icon
+      name="mdi:envelope"
+      class="text-carbon-black-900 text-3xl"
+    />
+
+    <NavbarEntry>Contacts</NavbarEntry>
+
+    <Icon
+      name="fluent:chevron-down-12-filled"
+      class="text-carbon-black-900 text-3xl"
+    />
+  </button>
+
+  <div
+    x-show="open"
+    class="absolute top-full bg-spicy-paprika-400 p-3 rounded-br-lg rounded-bl-lg flex flex-row justify-between w-full"
+  >
+    <div class="text-carbon-black-900 font-bold flex flex-col w-full">
+      <DropElem>
+        <Icon
+          name="mdi:github"
+          class="text-xl"
+        />
+
+        <Link
+          link="https://github.com/Sckab"
+          text="Github"
+        />
+      </DropElem>
+      <DropElem>
+        <Icon
+          name="simple-icons:leetcode"
+          class="text-xl"
+        />
+
+        <Link
+          link="https://leetcode.com/u/Sckab"
+          text="LeetCode"
+        />
+      </DropElem>
+      <DropElem>
+        <Icon
+          name="akar-icons:discord-fill"
+          class="text-xl"
+        />
+
+        <Link
+          link="https://discord.gg/RVX6RRqkt5"
+          text="Discord"
+        />
+      </DropElem>
+    </div>
+  </div>
+</div>

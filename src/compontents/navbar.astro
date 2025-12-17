@@ -1,0 +1,36 @@
+---
+import '../styles/global.css'
+
+import ContactsDropdown from './contacts-dropdown.astro'
+import Link from './link.astro'
+import NavbarEntry from './navbar-entry.astro'
+---
+
+<nav
+  class="bg-spicy-paprika-400 flex items-center h-fit w-full justify-between px-5"
+>
+  <div class="flex-5"></div>
+
+  <ul class="flex gap-5 items-center">
+    <li>
+      <NavbarEntry>
+        <Link
+          link="#stack"
+          text="Stack"
+        />
+      </NavbarEntry>
+    </li>
+    <li>
+      <NavbarEntry>
+        <Link
+          link="#projects"
+          text="Projects"
+        />
+      </NavbarEntry>
+    </li>
+  </ul>
+
+  <div class="flex-4"></div>
+
+  <ContactsDropdown />
+</nav>
