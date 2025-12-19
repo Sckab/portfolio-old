@@ -1,0 +1,11 @@
+---
+import '../styles/global.css'
+
+const { link, text } = Astro.props
+---
+
+<a
+  href={link}
+  class="hover:underline text-spicy-paprika-500 hover:cursor-pointer font-semibold"
+  >{text}</a
+>

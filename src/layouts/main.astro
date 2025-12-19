@@ -28,7 +28,9 @@ import Header from '../compontents/header.astro'
   <body class="flex flex-col min-h-screen">
     <Header />
 
-    <main class="bg-carbon-black-900 grow flex flex-col items-center">
+    <main
+      class="bg-carbon-black-900 grow flex flex-col items-center min-h-screen max-h-fit"
+    >
       <slot />
     </main>
 
