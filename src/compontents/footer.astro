@@ -8,8 +8,10 @@ import Link from '../compontents/link-footer.astro'
 <footer
   class="bg-spicy-paprika-500 flex justify-center text-carbon-black-900 w-full flex-col"
 >
-  <div class="flex justify-center w-full gap-20 mt-6">
-    <div class="w-1/6">
+  <div
+    class="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:w-full w-3/4 gap-5 lg:gap-20 mt-6 mx-auto"
+  >
+    <div class="lg:w-1/6 w-full">
       <h3 class="font-bold text-3xl">Contacts</h3>
       <hr class="h-0.5 my-1.5" />
       <ul>
@@ -48,7 +50,7 @@ import Link from '../compontents/link-footer.astro'
         </li>
         <li class="flex flex-row justify-between">
           <Link
-            link="mailto:giulianodeamicis2009@gmail.com"
+            link="mailto:giuliano@scsdc-co.org"
             text="Mail"
           />
 
@@ -60,7 +62,7 @@ import Link from '../compontents/link-footer.astro'
       </ul>
     </div>
 
-    <div class="w-1/6">
+    <div class="lg:w-1/6 w-full">
       <h3 class="font-bold text-3xl">Other Pages</h3>
       <hr class="h-0.5 my-1.5" />
       <ul>
@@ -91,7 +93,7 @@ import Link from '../compontents/link-footer.astro'
   </div>
 
   <div class="flex justify-center items-center my-3">
-    <span class="text-sm">
+    <span class="text-sm flex justify-center items-center flex-col lg:inline">
       This poroject is open source:
       <a
         href="https://github.com/Sckab/portfolio"
