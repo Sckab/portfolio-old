@@ -6,39 +6,22 @@ import Layout from '../layouts/main.astro'
 ---
 
 <Layout>
-  <div class="flex flex-1 justify-center flex-col">
-    <section class="flex flex-row flex-1 items-center justify-center w-full">
-      <div class="flex flex-col w-3/4 xl:w-3/5">
-        <Title>Hello!</Title>
+  <section class="flex flex-row flex-1 items-center justify-center w-full">
+    <div class="flex flex-col w-3/4 xl:w-3/5">
+      <Title>Hello!</Title>
 
-        <Paragraph>
-          I'm an 11th grade student and a passionate software/front-end
-          developer at
-          <Link
-            link="https://github.com/SCSDC-co"
-            text="SCSDC."
-          />
-          <br />
-          {" "}I love building clean, user-friendly UI/UX designs for websites
-          and desktop apps, turning designs into fast, accessible, and
-          maintainable interfaces.
-        </Paragraph>
-      </div>
-    </section>
-  </div>
-
-  <div class="flex justify-center flex-col">
-    <section class="flex flex-row items-center justify-center w-full">
-      <div class="flex flex-col w-3/4 xl:w-3/5">
-        <Title id="stack">Stack</Title>
-
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          mollitia pariatur maiores dignissimos illo debitis vero saepe tempore
-          corrupti a ut voluptates, impedit dolorum doloremque, expedita
-          commodi, voluptatum blanditiis atque.
-        </Paragraph>
-      </div>
-    </section>
-  </div>
+      <Paragraph>
+        I'm an 11th grade student and a passionate software/front-end developer
+        at
+        <Link
+          link="https://github.com/SCSDC-co"
+          text="SCSDC."
+        />
+        <br />
+        {" "}I love building clean, user-friendly UI/UX designs for websites and
+        desktop apps, turning designs into fast, accessible, and maintainable
+        interfaces.
+      </Paragraph>
+    </div>
+  </section>
 </Layout>

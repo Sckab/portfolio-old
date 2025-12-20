@@ -1,0 +1,12 @@
+---
+import '../styles/global.css'
+
+const { link, text } = Astro.props
+---
+
+<a
+  href={link}
+  class="text-xl hover:underline"
+>
+  {text}
+</a>
