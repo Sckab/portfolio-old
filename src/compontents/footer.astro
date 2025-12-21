@@ -6,14 +6,14 @@ import Link from '../compontents/link-footer.astro'
 ---
 
 <footer
-  class="bg-spicy-paprika-500 flex justify-center text-carbon-black-900 w-full flex-col"
+  class="flex w-full flex-col justify-center bg-spicy-paprika-500 text-carbon-black-900"
 >
   <div
-    class="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:w-full w-3/4 gap-5 lg:gap-20 mt-6 mx-auto"
+    class="mx-auto mt-6 flex w-3/4 flex-col items-center justify-center gap-5 lg:w-full lg:flex-row lg:items-start lg:gap-20"
   >
-    <div class="lg:w-1/6 w-full">
-      <h3 class="font-bold text-3xl">Contacts</h3>
-      <hr class="h-0.5 my-1.5" />
+    <div class="w-full lg:w-1/6">
+      <h3 class="text-3xl font-bold">Contacts</h3>
+      <hr class="my-1.5 h-0.5" />
       <ul>
         <li class="flex flex-row justify-between">
           <Link
@@ -23,7 +23,7 @@ import Link from '../compontents/link-footer.astro'
 
           <Icon
             name="mdi:github"
-            class="text-carbon-black-900 text-3xl"
+            class="text-3xl text-carbon-black-900"
           />
         </li>
         <li class="flex flex-row justify-between">
@@ -34,7 +34,7 @@ import Link from '../compontents/link-footer.astro'
 
           <Icon
             name="simple-icons:leetcode"
-            class="text-carbon-black-900 text-3xl"
+            class="text-3xl text-carbon-black-900"
           />
         </li>
         <li class="flex flex-row justify-between">
@@ -45,7 +45,7 @@ import Link from '../compontents/link-footer.astro'
 
           <Icon
             name="akar-icons:discord-fill"
-            class="text-carbon-black-900 text-3xl"
+            class="text-3xl text-carbon-black-900"
           />
         </li>
         <li class="flex flex-row justify-between">
@@ -56,15 +56,15 @@ import Link from '../compontents/link-footer.astro'
 
           <Icon
             name="mdi:envelope"
-            class="text-carbon-black-900 text-3xl"
+            class="text-3xl text-carbon-black-900"
           />
         </li>
       </ul>
     </div>
 
-    <div class="lg:w-1/6 w-full">
-      <h3 class="font-bold text-3xl">Other Pages</h3>
-      <hr class="h-0.5 my-1.5" />
+    <div class="w-full lg:w-1/6">
+      <h3 class="text-3xl font-bold">Other Pages</h3>
+      <hr class="my-1.5 h-0.5" />
       <ul>
         <li class="flex flex-row justify-between">
           <Link
@@ -74,7 +74,7 @@ import Link from '../compontents/link-footer.astro'
 
           <Icon
             name="fluent:code-24-filled"
-            class="text-carbon-black-900 text-3xl"
+            class="text-3xl text-carbon-black-900"
           />
         </li>
         <li class="flex flex-row justify-between">
@@ -85,15 +85,15 @@ import Link from '../compontents/link-footer.astro'
 
           <Icon
             name="fluent:folder-24-filled"
-            class="text-carbon-black-900 text-3xl"
+            class="text-3xl text-carbon-black-900"
           />
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="flex justify-center items-center my-3">
-    <span class="text-sm flex justify-center items-center flex-col lg:inline">
+  <div class="my-3 flex items-center justify-center">
+    <span class="flex flex-col items-center justify-center text-sm lg:inline">
       This poroject is open source:
       <a
         href="https://github.com/Sckab/portfolio"

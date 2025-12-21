@@ -13,27 +13,27 @@ import NavbarEntry from './navbar-entry.astro'
   class="relative w-fit"
 >
   <button
-    class="flex flex-row justify-center items-center gap-2 p-1 cursor-pointer select-none"
+    class="flex cursor-pointer flex-row items-center justify-center gap-2 p-1 select-none"
     @click="open = !open"
   >
     <Icon
       name="mdi:envelope"
-      class="text-carbon-black-900 text-3xl"
+      class="text-3xl text-carbon-black-900"
     />
 
     <NavbarEntry>Contacts</NavbarEntry>
 
     <Icon
       name="fluent:chevron-down-12-filled"
-      class="text-carbon-black-900 text-3xl"
+      class="text-3xl text-carbon-black-900"
     />
   </button>
 
   <div
     x-show="open"
-    class="absolute top-full bg-spicy-paprika-400 p-3 rounded-br-lg rounded-bl-lg flex flex-row justify-between w-full"
+    class="absolute top-full flex w-full flex-row justify-between rounded-br-lg rounded-bl-lg bg-spicy-paprika-400 p-3"
   >
-    <div class="text-carbon-black-900 font-bold flex flex-col w-full">
+    <div class="flex w-full flex-col font-bold text-carbon-black-900">
       <DropElem>
         <Icon
           name="mdi:github"
