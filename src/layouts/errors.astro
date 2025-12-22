@@ -1,0 +1,42 @@
+---
+import '../styles/global.css'
+import Link from '../compontents/link-cool.astro'
+
+const { error, message } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <title>{error}</title>
+  </head>
+  <body class="flex flex-col">
+    <main
+      class="flex h-screen flex-col items-center justify-center gap-1 bg-carbon-black-900"
+    >
+      <h1 class="my-2 text-9xl font-bold text-spicy-paprika-500">{error}</h1>
+      <span class="text-xl text-floral-white-50">{message}</span>
+
+      <div class="flex flex-row gap-6">
+        <Link
+          link="/"
+          text="GO TO THE HOME PAGE"
+        />
+      </div>
+    </main>
+  </body>
+</html>
