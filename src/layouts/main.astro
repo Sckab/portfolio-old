@@ -19,6 +19,10 @@ import Header from '../compontents/header.astro'
       content="width=device-width"
     />
     <meta
+      name="robots"
+      content="index, follow"
+    />
+    <meta
       name="generator"
       content={Astro.generator}
     />
@@ -31,7 +35,7 @@ import Header from '../compontents/header.astro'
     <main
       class="flex h-3/4 shrink-0 grow flex-col items-center justify-center bg-carbon-black-900 py-11"
     >
-      <section class="flex w-full flex-1 flex-row items-center justify-center">
+      <section class="flex w-full items-center justify-center">
         <div class="mx-4 flex flex-col xl:w-3/5">
           <slot />
         </div>
