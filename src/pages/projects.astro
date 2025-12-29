@@ -1,4 +1,6 @@
 ---
+import Card from '../compontents/card.astro'
+import Divider from '../compontents/divider-sm.astro'
 import Paragraph from '../compontents/paragraph.astro'
 import Title from '../compontents/title.astro'
 import Layout from '../layouts/main.astro'
@@ -9,12 +11,43 @@ import Layout from '../layouts/main.astro'
     <div class="flex w-3/4 flex-col xl:w-3/5">
       <Title>Projects</Title>
 
+      <Divider />
+
       <Paragraph>
         These are the projects I’ve built, focused on learning, experimenting,
         and pushing my limits.
         <br />
         They range from websites to software built with C++ and C#.
       </Paragraph>
+
+      <Divider />
+      <Divider />
+
+      <div class="flex w-full flex-col gap-3 lg:flex-row">
+        <Card
+          name="DINFO"
+          description="A cool tool to get some informations from directory and files, with json, yaml and html output support."
+          linkRepo="https://github.com/SCSDC-co/DINFO"
+          languages="C#"
+          tools=".NET"
+        />
+
+        <Card
+          name="FIMA (still WIP)"
+          description="FIMA (File Manager) is a simple TUI file manager, aimed to be fast and easy to use"
+          linkRepo="https://github.com/SCSDC-co/FIMA"
+          languages="C++"
+          tools="CMake, Ninja"
+        />
+
+        <Card
+          name="Create Mastery website"
+          description="The official Create Mastery website"
+          linkRepo="https://github.com/Create-Mastery/website"
+          languages="HTML, TS"
+          tools="Astro, Tailwindcss"
+        />
+      </div>
     </div>
   </section>
 </Layout>
